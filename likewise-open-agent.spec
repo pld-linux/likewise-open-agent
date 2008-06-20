@@ -44,6 +44,12 @@ an easy way to perform basic administration of Linux servers for file
 and print using the familiar Microsoft Management Console(MMC)
 tools/wizards built into Windows.
 
+Likewise Open Agent works in conjunction with Samba, CUPS and other
+Linux applications. Many management functions utilize Samba and its
+RPC mechanisms and callouts. Functionality not supported by Microsoft
+RPC and Samba is provided through SOAP services calls to a server
+hosted using SOAP-Lite.
+
 %prep
 %setup -q
 sed -i -e 's/^concurrentdir/#concurentdir/' Linux/cesm-agent/build.properties
