@@ -20,10 +20,10 @@ Source0:	http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourcef
 URL:		http://www.likewisesoftware.com/
 BuildRequires:	ant
 BuildRequires:	autoconf
+BuildRequires:	concurrent
 BuildRequires:	jpackage-utils
 BuildRequires:	krb5-devel
 BuildRequires:	rpm-perlprov
-BuildRequires:	rpmbuild(macros) >= 1.228
 BuildRequires:	rpmbuild(macros) >= 1.300
 BuildRequires:	samba-devel
 Requires(post,preun):	/sbin/chkconfig
@@ -49,6 +49,21 @@ Linux applications. Many management functions utilize Samba and its
 RPC mechanisms and callouts. Functionality not supported by Microsoft
 RPC and Samba is provided through SOAP services calls to a server
 hosted using SOAP-Lite.
+
+Supports using the Windows Microsoft Management Console (MMC) to
+perform the following administration task on Linux(R) servers:
+- Add/delete/modify file shares
+- Add/delete/modify print shares
+- Use the Device Manager plug-in to view the properties of a Linux
+  system
+- Right-click on a Linux server to view properties and/or shut down
+  the machine
+- Collect events from the Linux system for display through the
+  Microsoft Event Viewer
+- Using Samba 3.0.21 or later, provide performance counter
+  information through the perfmon client application
+
+
 
 %prep
 %setup -q
