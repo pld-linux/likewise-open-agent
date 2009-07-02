@@ -22,7 +22,7 @@ BuildRequires:	ant
 BuildRequires:	autoconf
 BuildRequires:	concurrent
 BuildRequires:	jpackage-utils
-BuildRequires:	krb5-devel
+BuildRequires:	heimdal-devel
 BuildRequires:	rpm-perlprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 BuildRequires:	samba-devel
